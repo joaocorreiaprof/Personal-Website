@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from "react";
+import "./styles/App.css";
+import Home from "./components/Home";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [stars, setStars] = useState([]);
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  useEffect(() => {
+    const generateStars = () => {
+      const starElements = [];
+      for (let i = 0; i < 100; i++) {
+        const top = Math.random() * 100;
+        const left = Math.random() * 100;
+        starElements.push(
+          <div
+            key={i}
+            className="star"
+            style={{ top: `${top}%`, left: `${left}%` }}
+          ></div>
+        );
+      }
+      setStars(starElements);
+    };
+
+    generateStars();
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      {stars}
+      <button
+        className="menu-button"
+        onClick={() => setMenuVisible(!menuVisible)}
+        style={{ right: menuVisible ? "5%" : "10px" }}
+      >
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <nav className={menuVisible ? "open" : ""}>
+        <button onClick={() => scrollToSection("home")}>Home</button>
+        <button onClick={() => scrollToSection("about")}>About</button>
+        <button onClick={() => scrollToSection("contact")}>Contact</button>
+      </nav>
+      <Home />
+    </div>
+  );
 }
 
-export default App
+export default App;
