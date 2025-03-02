@@ -10,10 +10,6 @@
   height: 100vh;
 }
 
-#about {
-  height: 100vh;
-}
-
 #contact {
   height: 100vh;
 }
@@ -21,14 +17,41 @@
 .section-home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .home-title {
+  display: flex;
   align-items: center;
   font-family: "Roboto", "Inter", sans-serif;
-  font-size: 6vw;
-  font-weight: 500;
-  text-align: center;
+  font-size: 7vw;
+  font-weight: 800;
+}
+
+.home-image {
+  height: 60vw;
+  max-height: 600px;
+  width: auto;
+  border-radius: 50%;
+}
+
+/*About*/
+
+.section-about {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .home-image {
+    height: 70vw; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-image {
+    height: 90vw; /* Further adjust height for very small screens */
+  }
 }
