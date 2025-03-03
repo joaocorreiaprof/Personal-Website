@@ -48,7 +48,7 @@ function App() {
       <nav className={menuVisible ? "open" : ""}>
         <button onClick={() => scrollToSection("home")}>Home</button>
         <button onClick={() => scrollToSection("about")}>About</button>
-        <button onClick={() => scrollToSection("contact")}>Contact</button>
+        <button onClick={() => scrollToSection("projects")}>Projects</button>
       </nav>
       <Home />
     </div>

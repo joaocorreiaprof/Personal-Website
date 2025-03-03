@@ -10,7 +10,7 @@
   height: 100vh;
 }
 
-#contact {
+#projects {
   height: 100vh;
 }
 
@@ -44,14 +44,10 @@
   width: 100vw;
 }
 
-@media (max-width: 768px) {
-  .home-image {
-    height: 70vw; /* Adjust height for smaller screens */
-  }
-}
+/*Projects*/
 
-@media (max-width: 480px) {
-  .home-image {
-    height: 90vw; /* Further adjust height for very small screens */
-  }
+.section-projects {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }

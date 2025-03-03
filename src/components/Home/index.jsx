@@ -1,6 +1,6 @@
 //Components
 import About from "../About";
-import Contact from "../Contact";
+import Projects from "../Projects";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
@@ -48,8 +48,8 @@ const Home = () => {
       <section id="about" className="section-about">
         <About />
       </section>
-      <section id="contact" className="section-contact">
-        <Contact />
+      <section id="projects" className="section-projects">
+        <Projects />
       </section>
     </div>
   );
