@@ -24,22 +24,69 @@
 
 .about-text-me {
   width: 100%;
-  height: 70%;
+  height: 50%;
+  padding-top: 3%;
   padding-right: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .about-text-title {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  margin-bottom: 30px;
+  color: yellow;
+}
+
+.about-text-description,
+.about-text-goal {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
 }
 
 /*Tools*/
 
 .about-text-tools {
   width: 100%;
-  height: 30%;
+  height: 50%;
+  padding-right: 25%;
+}
+
+.tech-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  color: yellow;
+}
+
+.about-tools-icons {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about-icons {
+  width: 50px;
+}
+
+.about-skills-terminal {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.about-text-skills {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
 }
