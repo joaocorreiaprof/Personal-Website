@@ -10,10 +10,6 @@
   height: 100vh;
 }
 
-#projects {
-  height: 100vh;
-}
-
 .section-home {
   display: flex;
   flex-direction: column;
@@ -48,6 +44,5 @@
 
 .section-projects {
   display: flex;
-  height: 100vh;
   width: 100vw;
 }

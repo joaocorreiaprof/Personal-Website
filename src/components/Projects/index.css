@@ -1,0 +1,62 @@
+.projects-container {
+  padding: 20px;
+}
+
+.all-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  perspective: 1000px;
+}
+
+.project-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.project:hover .project-inner {
+  transform: rotateY(180deg);
+}
+
+.project-front,
+.project-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.project-back {
+  transform: rotateY(180deg);
+}
+
+.project img,
+.project video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 5px;
+}
