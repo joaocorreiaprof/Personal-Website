@@ -22,7 +22,9 @@ const About = () => {
       </div>
       <div className="about-text">
         <div className="about-text-me">
-          <p className="about-text-title">Hello, I'm João Correia</p>
+          <p className="about-text-title">
+            <span style={{ color: "yellow" }}>Hello,</span> I'm João Correia
+          </p>
           <p className="about-text-description">
             By day, I write clean and efficient code. By night… well, I keep
             coding becasue bugs don't follow business hours.

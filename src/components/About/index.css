@@ -38,7 +38,6 @@
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   margin-bottom: 30px;
-  color: yellow;
 }
 
 .about-text-description,
@@ -58,13 +57,12 @@
 }
 
 .tech-text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   margin-top: 2rem;
-  color: yellow;
 }
 
 .about-tools-icons {
