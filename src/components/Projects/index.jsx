@@ -64,179 +64,327 @@ const Projects = () => {
     <div className="projects-container">
       <h1>Projects</h1>
       <div className="all-projects">
-        <div
-          className="project"
-          onMouseEnter={(e) =>
-            handleMouseEnter(e.currentTarget.querySelector("video"))
-          }
-          onMouseLeave={(e) =>
-            handleMouseLeave(e.currentTarget.querySelector("video"))
-          }
-        >
-          <div className="project-inner">
-            <div className="project-front">
-              <img
-                src={BinaryImage}
-                alt="Project binary image"
-                className="project-image"
-              />
+        <div className="project-container">
+          <div className="project-image-video">
+            <div
+              className="project"
+              onMouseEnter={(e) =>
+                handleMouseEnter(e.currentTarget.querySelector("video"))
+              }
+              onMouseLeave={(e) =>
+                handleMouseLeave(e.currentTarget.querySelector("video"))
+              }
+            >
+              <div className="project-inner">
+                <div className="project-front">
+                  <img
+                    src={BinaryImage}
+                    alt="Project binary image"
+                    className="project-image"
+                  />
+                </div>
+                <div className="project-back">
+                  <VideoComponent src={BinaryVideo} playbackRate={2} />
+                </div>
+              </div>
             </div>
-            <div className="project-back">
-              <VideoComponent src={BinaryVideo} playbackRate={2} />
+          </div>
+          <div className="project-info">
+            <p className="project-title">Binary Buzz</p>
+            <p className="project-subtitle">Social network</p>
+            <p className="project-description">
+              A social media application made using React and CSS on the front
+              end. The back end is a REST API built with Node.js and Express,
+              using Google OAuth and Json Web Tokens for authentication
+            </p>
+            <div className="project-links">
+              <a
+                href="https://alpha-production-e8ae.up.railway.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Preview
+              </a>
+              <a
+                href="https://github.com/joaocorreiaprof/Alpha"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
             </div>
           </div>
         </div>
-        <div
-          className="project"
-          onMouseEnter={(e) =>
-            handleMouseEnter(e.currentTarget.querySelector("video"))
-          }
-          onMouseLeave={(e) =>
-            handleMouseLeave(e.currentTarget.querySelector("video"))
-          }
-        >
-          <div className="project-inner">
-            <div className="project-front">
-              <img
-                src={AlphaImage}
-                alt="Project alpha image"
-                className="project-image"
-              />
+        <div className="project-container">
+          <div className="project-image-video">
+            <div
+              className="project"
+              onMouseEnter={(e) =>
+                handleMouseEnter(e.currentTarget.querySelector("video"))
+              }
+              onMouseLeave={(e) =>
+                handleMouseLeave(e.currentTarget.querySelector("video"))
+              }
+            >
+              <div className="project-inner">
+                <div className="project-front">
+                  <img
+                    src={AlphaImage}
+                    alt="Project alpha image"
+                    className="project-image"
+                  />
+                </div>
+                <div className="project-back">
+                  <VideoComponent src={AlphaVideo} playbackRate={2} />
+                </div>
+              </div>
             </div>
-            <div className="project-back">
-              <VideoComponent src={AlphaVideo} playbackRate={2} />
+          </div>
+          <div className="project-info">
+            <p className="project-title">Alpha</p>
+            <p className="project-subtitle">Social network</p>
+            <p className="project-description">
+              A social media application made using React and CSS on the front
+              end. The back end is a REST API built with Node.js and Express,
+              using Google OAuth and Json Web Tokens for authentication
+            </p>
+            <div className="project-links">
+              <a
+                href="https://alpha-production-e8ae.up.railway.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Preview
+              </a>
+              <a
+                href="https://github.com/joaocorreiaprof/Alpha"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
             </div>
           </div>
         </div>
-        <div
-          className="project"
-          onMouseEnter={(e) =>
-            handleMouseEnter(e.currentTarget.querySelector("video"))
-          }
-          onMouseLeave={(e) =>
-            handleMouseLeave(e.currentTarget.querySelector("video"))
-          }
-        >
-          <div className="project-inner">
-            <div className="project-front">
-              <img
-                src={MilesImage}
-                alt="Project miles in mind image"
-                className="project-image"
-              />
+        <div className="project-container">
+          <div className="project-image-video">
+            <div
+              className="project"
+              onMouseEnter={(e) =>
+                handleMouseEnter(e.currentTarget.querySelector("video"))
+              }
+              onMouseLeave={(e) =>
+                handleMouseLeave(e.currentTarget.querySelector("video"))
+              }
+            >
+              <div className="project-inner">
+                <div className="project-front">
+                  <img
+                    src={MilesImage}
+                    alt="Project miles in mind image"
+                    className="project-image"
+                  />
+                </div>
+                <div className="project-back">
+                  <VideoComponent src={MilesVideo} playbackRate={2} />
+                </div>
+              </div>
             </div>
-            <div className="project-back">
-              <VideoComponent src={MilesVideo} playbackRate={2} />
+          </div>
+          <div className="project-info">
+            <p className="project-title">Waldo</p>
+            <p className="project-subtitle">A game</p>
+            <p className="project-description">Description</p>
+            <div className="project-icons">
+              <p>Icons</p>
+            </div>
+            <div className="project-links">
+              <p>links</p>
             </div>
           </div>
         </div>
-        <div
-          className="project"
-          onMouseEnter={(e) =>
-            handleMouseEnter(e.currentTarget.querySelector("video"))
-          }
-          onMouseLeave={(e) =>
-            handleMouseLeave(e.currentTarget.querySelector("video"))
-          }
-        >
-          <div className="project-inner">
-            <div className="project-front">
-              <img
-                src={FileImage}
-                alt="Project file uploader image"
-                className="project-image"
-              />
+        <div className="project-container">
+          <div className="project-video-image">
+            <div
+              className="project"
+              onMouseEnter={(e) =>
+                handleMouseEnter(e.currentTarget.querySelector("video"))
+              }
+              onMouseLeave={(e) =>
+                handleMouseLeave(e.currentTarget.querySelector("video"))
+              }
+            >
+              <div className="project-inner">
+                <div className="project-front">
+                  <img
+                    src={FileImage}
+                    alt="Project file uploader image"
+                    className="project-image"
+                  />
+                </div>
+                <div className="project-back">
+                  <VideoComponent src={FileVideo} playbackRate={2} />
+                </div>
+              </div>
             </div>
-            <div className="project-back">
-              <VideoComponent src={FileVideo} playbackRate={2} />
+          </div>
+          <div className="project-info">
+            <p className="project-title">Waldo</p>
+            <p className="project-subtitle">A game</p>
+            <p className="project-description">Description</p>
+            <div className="project-icons">
+              <p>Icons</p>
+            </div>
+            <div className="project-links">
+              <p>links</p>
             </div>
           </div>
         </div>
-        <div
-          className="project"
-          onMouseEnter={(e) =>
-            handleMouseEnter(e.currentTarget.querySelector("video"))
-          }
-          onMouseLeave={(e) =>
-            handleMouseLeave(e.currentTarget.querySelector("video"))
-          }
-        >
-          <div className="project-inner">
-            <div className="project-front">
-              <img
-                src={BookImage}
-                alt="Project book minder image"
-                className="project-image"
-              />
+        <div className="project-container">
+          <div className="project-video-image">
+            <div
+              className="project"
+              onMouseEnter={(e) =>
+                handleMouseEnter(e.currentTarget.querySelector("video"))
+              }
+              onMouseLeave={(e) =>
+                handleMouseLeave(e.currentTarget.querySelector("video"))
+              }
+            >
+              <div className="project-inner">
+                <div className="project-front">
+                  <img
+                    src={BookImage}
+                    alt="Project book minder image"
+                    className="project-image"
+                  />
+                </div>
+                <div className="project-back">
+                  <VideoComponent src={BookVideo} playbackRate={2} />
+                </div>
+              </div>
             </div>
-            <div className="project-back">
-              <VideoComponent src={BookVideo} playbackRate={2} />
+          </div>
+          <div className="project-info">
+            <p className="project-title">Waldo</p>
+            <p className="project-subtitle">A game</p>
+            <p className="project-description">Description</p>
+            <div className="project-icons">
+              <p>Icons</p>
+            </div>
+            <div className="project-links">
+              <p>links</p>
             </div>
           </div>
         </div>
-        <div
-          className="project"
-          onMouseEnter={(e) =>
-            handleMouseEnter(e.currentTarget.querySelector("video"))
-          }
-          onMouseLeave={(e) =>
-            handleMouseLeave(e.currentTarget.querySelector("video"))
-          }
-        >
-          <div className="project-inner">
-            <div className="project-front">
-              <img
-                src={CvImage}
-                alt="Project CV image"
-                className="project-image"
-              />
+        <div className="project-container">
+          <div className="project-video-image">
+            <div
+              className="project"
+              onMouseEnter={(e) =>
+                handleMouseEnter(e.currentTarget.querySelector("video"))
+              }
+              onMouseLeave={(e) =>
+                handleMouseLeave(e.currentTarget.querySelector("video"))
+              }
+            >
+              <div className="project-inner">
+                <div className="project-front">
+                  <img
+                    src={CvImage}
+                    alt="Project CV image"
+                    className="project-image"
+                  />
+                </div>
+                <div className="project-back">
+                  <VideoComponent src={CvVideo} playbackRate={2} />
+                </div>
+              </div>
             </div>
-            <div className="project-back">
-              <VideoComponent src={CvVideo} playbackRate={2} />
+          </div>
+          <div className="project-info">
+            <p className="project-title">Waldo</p>
+            <p className="project-subtitle">A game</p>
+            <p className="project-description">Description</p>
+            <div className="project-icons">
+              <p>Icons</p>
+            </div>
+            <div className="project-links">
+              <p>links</p>
             </div>
           </div>
         </div>
-        <div
-          className="project"
-          onMouseEnter={(e) =>
-            handleMouseEnter(e.currentTarget.querySelector("video"))
-          }
-          onMouseLeave={(e) =>
-            handleMouseLeave(e.currentTarget.querySelector("video"))
-          }
-        >
-          <div className="project-inner">
-            <div className="project-front">
-              <img
-                src={FreakyImage}
-                alt="Project freaky image"
-                className="project-image"
-              />
+        <div className="project-container">
+          <div className="project-video-image">
+            <div
+              className="project"
+              onMouseEnter={(e) =>
+                handleMouseEnter(e.currentTarget.querySelector("video"))
+              }
+              onMouseLeave={(e) =>
+                handleMouseLeave(e.currentTarget.querySelector("video"))
+              }
+            >
+              <div className="project-inner">
+                <div className="project-front">
+                  <img
+                    src={FreakyImage}
+                    alt="Project freaky image"
+                    className="project-image"
+                  />
+                </div>
+                <div className="project-back">
+                  <VideoComponent src={FreakyVideo} playbackRate={2} />
+                </div>
+              </div>
             </div>
-            <div className="project-back">
-              <VideoComponent src={FreakyVideo} playbackRate={2} />
+          </div>
+          <div className="project-info">
+            <p className="project-title">Waldo</p>
+            <p className="project-subtitle">A game</p>
+            <p className="project-description">Description</p>
+            <div className="project-icons">
+              <p>Icons</p>
+            </div>
+            <div className="project-links">
+              <p>links</p>
             </div>
           </div>
         </div>
-        <div
-          className="project"
-          onMouseEnter={(e) =>
-            handleMouseEnter(e.currentTarget.querySelector("video"))
-          }
-          onMouseLeave={(e) =>
-            handleMouseLeave(e.currentTarget.querySelector("video"))
-          }
-        >
-          <div className="project-inner">
-            <div className="project-front">
-              <img
-                src={WaldoImage}
-                alt="Project waldo image"
-                className="project-image"
-              />
+        <div className="project-container">
+          <div className="project-image-video">
+            <div
+              className="project"
+              onMouseEnter={(e) =>
+                handleMouseEnter(e.currentTarget.querySelector("video"))
+              }
+              onMouseLeave={(e) =>
+                handleMouseLeave(e.currentTarget.querySelector("video"))
+              }
+            >
+              <div className="project-inner">
+                <div className="project-front">
+                  <img
+                    src={WaldoImage}
+                    alt="Project waldo image"
+                    className="project-image"
+                  />
+                </div>
+                <div className="project-back">
+                  <VideoComponent src={WaldoVideo} playbackRate={2} />
+                </div>
+              </div>
             </div>
-            <div className="project-back">
-              <VideoComponent src={WaldoVideo} playbackRate={2} />
+          </div>
+          <div className="project-info">
+            <p className="project-title">Waldo</p>
+            <p className="project-subtitle">A game</p>
+            <p className="project-description">Description</p>
+            <div className="project-icons">
+              <p>Icons</p>
+            </div>
+            <div className="project-links">
+              <p>links</p>
             </div>
           </div>
         </div>
