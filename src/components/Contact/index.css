@@ -131,6 +131,14 @@ form input[type="submit"] {
 }
 
 @media (max-width: 480px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-container p {
+    text-align: center;
+  }
+
   .contact-title {
     font-size: 2.5rem;
   }

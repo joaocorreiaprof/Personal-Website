@@ -210,12 +210,11 @@ body.light-mode .nav-buttons button:hover {
   }
 
   .menu-button {
-    top: 5px;
-    right: 5px;
+    display: none;
   }
 
   nav {
-    width: 40%;
+    display: none;
   }
 
   .nav-buttons button {

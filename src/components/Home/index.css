@@ -85,19 +85,31 @@
 }
 
 @media (max-width: 480px) {
-  .section-home {
-    justify-content: space-between; /* Add space between text and image */
+  #home {
+    height: 100%;
+  }
+
+  .home-container {
+    display: flex;
+    justify-content: center;
   }
 
   .home-title {
-    font-size: 15vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-text {
+    font-size: 3rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
   }
 
   .home-image {
-    height: 80vw; /* Increase image height */
-    margin-top: 20px; /* Add margin to separate text and image */
+    height: 70vw;
+    margin: 50px 0;
   }
 
   .section-about,

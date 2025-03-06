@@ -12,7 +12,7 @@
 
 .about-model {
   width: 50%;
-  height: 100%;
+  height: 100vh;
 }
 
 .about-text {
@@ -140,7 +140,9 @@
     align-items: center;
   }
 
-  .about-model,
+  .about-model {
+    display: none;
+  }
   .about-text {
     width: 90%;
   }
@@ -185,7 +187,13 @@
 
   .about-text-me,
   .about-text-tools {
-    padding-right: 2%;
+    padding: 20px;
+  }
+
+  .about-tools-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
   }
 
   .about-text-description,
