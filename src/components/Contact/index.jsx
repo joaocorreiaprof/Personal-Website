@@ -56,8 +56,8 @@ const Contact = () => {
         </a>
       </div>
       <p>
-        You can also leave me a message in here and i'll replay via email as
-        soon as possible
+        You can also leave me a message in here, and i'll reply via email as
+        soon as possible.
       </p>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
