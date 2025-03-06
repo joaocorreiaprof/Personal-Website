@@ -22,12 +22,9 @@ const About = () => {
       </div>
       <div className="about-text">
         <div className="about-text-me">
-          <p className="about-text-title">
-            <span style={{ color: "yellow" }}>Hello,</span> I'm João Correia
-          </p>
           <p className="about-text-description">
             By day, I write clean and efficient code. By night… well, I keep
-            coding becasue bugs don't follow business hours.
+            coding because bugs don't follow business hours.
             <br /> I'm passionate about all the things in web development, and
             in my free time, I explore robotics and emerging technologies.
             <br />
@@ -36,8 +33,12 @@ const About = () => {
             professionalism but also a good dose of humor and positivity.
           </p>
           <p className="about-text-goal">
-            <strong style={{ color: "yellow" }}>My goal?</strong> To craft
-            scalable, secure, and intuitive applications that make life easier.
+            <strong style={{ color: "var(--highlight-color)" }}>
+              My goal?
+            </strong>{" "}
+            To craft
+            <strong> scalable</strong>, <strong> secure</strong>, and{" "}
+            <strong>intuitive applications</strong> that make life easier.
           </p>
         </div>
         <div className="about-text-tools">
@@ -50,16 +51,20 @@ const About = () => {
             <img src={Nodejs} alt="Node icon" className="about-icons" />
             <img src={Git} alt="Git icon" className="about-icons" />
             <img src={Mysql} alt="Mysql icon" className="about-icons" />
-            <img src={Database} alt="Databse icon" className="about-icons" />
+            <img src={Database} alt="Database icon" className="about-icons" />
           </div>
           <div className="about-skills-terminal">
             <p className="about-text-skills">
-              <span style={{ color: "yellow" }}>user_dev ~ $</span> I am skilled
-              in programming languages such as C, Python, and JavaScript. On the
-              frontend, I work with HTML, CSS, and React, while on the backend,
-              I utilize Node.js and Express. I have experience with databases
-              like SQL, PostgreSQL, Prisma, and MongoDB. Additionally, I am
-              proficient in testing with Jest.
+              <span
+                style={{ color: "var(--highlight-color)", fontWeight: "bold" }}
+              >
+                user_dev ~ $
+              </span>{" "}
+              I am skilled in programming languages such as C, Python, and
+              JavaScript. On the frontend, I work with HTML, CSS, and React,
+              while on the backend, I utilize Node.js and Express. I have
+              experience with databases like SQL, PostgreSQL, Prisma, and
+              MongoDB. Additionally, I am proficient in testing with Jest.
             </p>
           </div>
         </div>

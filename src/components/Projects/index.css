@@ -1,55 +1,231 @@
 .projects-container {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.projects-container-title {
+  font-size: 4.2rem;
+  font-weight: bold;
 }
 
 .all-projects {
   display: flex;
   flex-direction: column;
-}
-
-.project {
-  position: relative;
-  width: 600px;
-  height: 300px;
-  margin: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  perspective: 1000px;
-}
-
-.project-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.project:hover .project-inner {
-  transform: rotateY(180deg);
-}
-
-.project-front,
-.project-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.project-back {
-  transform: rotateY(180deg);
-}
-
-.project img,
-.project video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  align-items: center;
 }
 
 .project-container {
   display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px 0;
+  position: relative;
+  gap: 15px;
+}
+
+.project-container.left .project {
+  order: 1;
+}
+
+.project-container.left .project-info {
+  order: 2;
+  text-align: left;
+}
+
+.project-container.right .project {
+  order: 2;
+}
+
+.project-container.right .project-info {
+  order: 1;
+  text-align: right;
+}
+
+.project {
+  flex: 1;
+  margin: 0 20px;
+  position: relative;
+  width: 850px;
+  height: 350px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+  gap: 5px;
+  text-align: center; /* Center text */
+}
+
+.project-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.project-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.project-description {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center; /* Center buttons */
+}
+
+.project-links a {
+  margin-right: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+.project video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .projects-container-title {
+    font-size: 3.5rem;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .project-container.left .project,
+  .project-container.right .project {
+    order: 2;
+  }
+
+  .project-container.left .project-info,
+  .project-container.right .project-info {
+    order: 1;
+    text-align: center;
+  }
+
+  .project {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
+
+  .project-subtitle,
+  .project-description,
+  .project-links a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container-title {
+    font-size: 3rem;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  .project-container.left .project,
+  .project-container.right .project {
+    order: 2;
+  }
+
+  .project-container.left .project-info,
+  .project-container.right .project-info {
+    order: 1;
+    text-align: center;
+  }
+
+  .project {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-subtitle,
+  .project-description,
+  .project-links a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container-title {
+    font-size: 2.5rem;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .project-container.left .project,
+  .project-container.right .project {
+    order: 2;
+  }
+
+  .project-container.left .project-info,
+  .project-container.right .project-info {
+    order: 1;
+    text-align: center;
+  }
+
+  .project {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-subtitle,
+  .project-description,
+  .project-links a {
+    font-size: 0.9rem;
+  }
 }
