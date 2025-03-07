@@ -9,6 +9,7 @@
 .projects-container-title {
   font-size: 4.2rem;
   font-weight: bold;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -79,6 +80,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin: 10px 0;
+  text-align: center;
 }
 
 .project-links {

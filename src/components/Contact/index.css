@@ -9,16 +9,19 @@
 
 .contact-title {
   font-size: 4rem;
+  margin-top: 50px;
 }
 
 .icon {
   font-size: 4rem;
+  margin-bottom: 50px;
 }
 
 .contact-links {
   display: flex;
   font-size: 3rem;
   gap: 30px;
+  margin-bottom: 50px;
 }
 
 .contact-icon:hover {
